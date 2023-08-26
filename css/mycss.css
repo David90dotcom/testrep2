@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .floating-svg {
+    position: relative;
+    animation: floatAnimation 3s ease-in-out infinite;
+  }
+  
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
